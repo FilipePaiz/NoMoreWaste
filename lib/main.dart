@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+
   final titleController = TextEditingController();
   final amountController = TextEditingController();
 
@@ -26,7 +27,7 @@ class MyHomePage extends StatelessWidget {
         title: Text('Flutter App'),
       ),
       body: SingleChildScrollView(
-        child: Column(
+              child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
