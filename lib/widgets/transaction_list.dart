@@ -34,6 +34,8 @@ class TransactionList extends StatelessWidget {
           : ListView.builder(
               itemBuilder: (context, index) {
                 return Card(
+                  elevation: 40,
+                  color: Colors.transparent,
                   child: Row(
                     children: <Widget>[
                       Container(
@@ -67,7 +69,7 @@ class TransactionList extends StatelessWidget {
                           Text(
                             DateFormat.yMMMMEEEEd()
                                 .format(transactions[index].date),
-                            style: TextStyle(color: Colors.grey),
+                            style: TextStyle(color: Colors.blueGrey),
                           ),
                         ],
                       )

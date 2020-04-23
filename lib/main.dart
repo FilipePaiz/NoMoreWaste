@@ -12,23 +12,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Personal Expenses',
+      title: 'No More Waste!',
       theme: ThemeData(
-        primarySwatch: Colors.orange,
-        accentColor: Colors.amberAccent,
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.deepPurple,
         fontFamily: 'QuickSand',
         textTheme: ThemeData.light().textTheme.copyWith(
               title: TextStyle(
                 fontFamily: 'OpenSans',
                 fontWeight: FontWeight.bold,
-                fontSize: 18,
+                fontSize: 20,
+                color: Colors.blue,
               ),
             ),
         appBarTheme: AppBarTheme(
           textTheme: ThemeData.light().textTheme.copyWith(
                 title: TextStyle(
                   fontFamily: 'OpenSans',
-                  fontSize: 20,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -86,8 +87,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(50, 0, 130, 0.8),
       appBar: AppBar(
-        title: Text('Personal Expenses'),
+        title: Text('Expenses'),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(gradient: LinearGradient(colors: <Color>[
+            Color.fromRGBO(50, 0, 130, 0.8), Colors.deepPurple
+          ])),
+        ),
         centerTitle: true,
         actions: <Widget>[
           IconButton(

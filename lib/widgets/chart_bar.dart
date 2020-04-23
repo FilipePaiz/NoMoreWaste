@@ -12,7 +12,8 @@ class CharBar extends StatelessWidget {
     return Column(
       children: <Widget>[
         FittedBox(
-          child: Text('€${spendingAmount.toStringAsFixed(0)}'),
+          child: Text('€${spendingAmount.toStringAsFixed(0)}',
+              style: TextStyle(color: Colors.blue)),
         ),
         SizedBox(
           height: 4,
@@ -30,7 +31,7 @@ class CharBar extends StatelessWidget {
                 ),
               ),
               FractionallySizedBox(
-                heightFactor: spendingPctTotal,
+                heightFactor: null,
                 child: Container(
                   decoration: BoxDecoration(
                       color: Theme.of(context).primaryColor,
@@ -43,7 +44,7 @@ class CharBar extends StatelessWidget {
         SizedBox(
           height: 4,
         ),
-        Text(label),
+        Text(label, style: TextStyle(color: Colors.blue)),
       ],
     );
   }
