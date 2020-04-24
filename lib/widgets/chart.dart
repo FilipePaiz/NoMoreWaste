@@ -33,7 +33,6 @@ class Chart extends StatelessWidget {
 
   double get maxSpending {
     return groupedTransactionValues.fold(0.0, (sum, item) {
-      print(sum + item['amount']);
       return sum + item['amount'];
     });
   }
@@ -54,7 +53,7 @@ class Chart extends StatelessWidget {
               child: CharBar(
                 label: data['day'],
                 spendingAmount: data['amount'],
-                spendingPctTotal: (data['amount'] as double) / maxSpending,
+                spendingPctTotal: maxSpending > 0 ? (data['amount'] as double) / maxSpending : 0.0,
               ),
             );
           }).toList(),
