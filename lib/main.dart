@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'No More Waste!',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
-        accentColor: Colors.deepPurple,
+        accentColor: Colors.amber,
         fontFamily: 'QuickSand',
         textTheme: ThemeData.light().textTheme.copyWith(
               title: TextStyle(
@@ -87,7 +87,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(30, 0, 130, 0.8),
       appBar: AppBar(
         title: Text('Expenses'),
         flexibleSpace: Container(
