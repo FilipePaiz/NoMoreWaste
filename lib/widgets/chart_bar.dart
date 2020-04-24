@@ -11,9 +11,12 @@ class CharBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        FittedBox(
-          child: Text('€${spendingAmount.toStringAsFixed(0)}',
-              style: TextStyle(color: Colors.blue)),
+        Container(
+          height: 20,
+          child: FittedBox(
+            child: Text('€${spendingAmount.toStringAsFixed(0)}',
+                style: TextStyle(color: Colors.blue)),
+          ),
         ),
         SizedBox(
           height: 4,
