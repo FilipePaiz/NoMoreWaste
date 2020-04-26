@@ -1,4 +1,5 @@
 import 'package:flutter/services.dart';
+import 'dart:io';
 
 import './widgets/chart.dart';
 import './widgets/new_transaction.dart';
@@ -22,14 +23,14 @@ class MyApp extends StatelessWidget {
       title: 'No More Waste!',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
-        accentColor: Colors.amber,
+        accentColor: Colors.blueGrey,
         fontFamily: 'QuickSand',
         textTheme: ThemeData.light().textTheme.copyWith(
               title: TextStyle(
                 fontFamily: 'OpenSans',
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                color: Colors.blue,
+                color: Colors.blueGrey,
               ),
               button: TextStyle(color: Colors.white),
             ),
